@@ -16,18 +16,23 @@
   }
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
-}
+
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
+  }
+}
+
+@layer components{
+  .textinfo{
+    @apply p-4 bg-gray-500 rounded-lg max-w-[300px]
+
+  }
+
+  .chatRow{
+    @apply rounded-lg px-5 py-3 text-sm
+     flex items-center justify-center space-x-2 hover:bg-gray-700
+    cursor-pointer text-gray-300 transition-all duration-200 ease-out
   }
 }
