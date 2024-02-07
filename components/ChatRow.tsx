@@ -26,7 +26,7 @@ const[messages]= useCollection(query(
 useEffect( ()=>{
     if(!pathname) return;
 setActive(pathname.includes(id));
-},[pathname]);
+},[pathname, id]);
 
 
 const removeChat=  async()=>{

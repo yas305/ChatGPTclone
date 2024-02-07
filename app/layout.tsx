@@ -36,7 +36,7 @@ export default async function RootLayout({
               <div className="bg-slate-900 max-w-xs h-screen overflow-y-auto md:min-w-[15rem]">
                 <Sidebar />
               </div>
-              {/* clientprovider */}
+              
               <ClientProvider/>
                 <div className="bg-slate-600 flex-1"> {children} </div>
           </div>
